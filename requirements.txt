@@ -1,0 +1,12 @@
+streamlit==1.25.0               # For the app UI
+openai>=1.1.0            # Update the OpenAI library to a newer version
+llama_index==0.10.12     # This version depends on openai >= 1.1.0, so it's compatible
+               # For using OpenAI's GPT models
+sentence-transformers==2.2.2    # For the SemanticChunker (text embeddings)
+torch==2.0.1                    # Required by sentence-transformers for model inference
+transformers==4.30.0            # For HuggingFace embedding models and tokenization
+watchdog==3.0.0                 # Optional: For better file watching performance with Streamlit
+
+# Add any other specific dependencies you may need for document formats
+PyPDF2==3.0.1                   # For reading PDF documents
+python-docx==0.8.11             # For reading DOCX documents
